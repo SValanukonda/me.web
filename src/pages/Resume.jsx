@@ -19,7 +19,7 @@ function Resume() {
             <h3>Performance Engineer</h3>
             <span className="date">Jun 2023 – Present</span>
           </div>
-          <div className="resume-subtitle">Tata Consultancy Services — BSNL & Deutsche Bank (Bangalore, India)</div>
+          <div className="resume-subtitle">Tata Consultancy Services (Bangalore, India)</div>
           <ul className="resume-bullets">
             <li><strong>Tuned Java applications</strong> (Spring Boot, JBoss) — analyzed thread dumps, heap dumps, GC logs, and Oracle reports to reduce P99 latency and improve throughput for 300M+ subscribers.</li>
             <li><strong>Optimized critical production SQL</strong> — rewrote queries reducing execution time from 40 minutes to 1 second.</li>
@@ -63,7 +63,6 @@ function Resume() {
           <li>Databricks Certified Generative AI Engineer Associate</li>
           <li>Google Cloud Generative AI Leader</li>
           <li>Generative AI at ACC (HPE)</li>
-          <li>Google SRE Fundamentals</li>
         </ul>
       </section>
     </div>

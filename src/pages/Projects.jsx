@@ -40,7 +40,15 @@ function Projects() {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <div className="project-header">
-              <h3>{project.title}</h3>
+              <h3>
+                {project.github ? (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-title-link">
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h3>
               <div className="project-links">
                 {project.github && (
                   <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
