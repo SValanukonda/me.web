@@ -1,6 +1,6 @@
 # Welcome to My Personal Blog!
 
-This repository powers my  personal blog, where I share my experiences, thoughts, and knowledge from my journey in technology and life.
+This repository powers my personal blog, where I share my experiences, thoughts, and knowledge from my journey in technology and life.
 
 ## What You’ll Find Here
 
