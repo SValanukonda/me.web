@@ -40,7 +40,7 @@ For a deep dive into the implementation, visit the **Garuda Project** on GitHub:
 
 ![Network list flooded with duplicate SSIDs during the attack](/BeaconAttack.jpeg)
 
-Watch the full demo on YouTube: [Garuda Blog Demo](https://www.youtube.com/watch?v=rMhEyAcG2WA)
+**Demo Video Link:** **[Garuda Blog Demo (YouTube)](https://www.youtube.com/watch?v=rMhEyAcG2WA)**
 
 *You can also view additional implementation details in the project README.*
 
