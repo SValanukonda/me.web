@@ -215,8 +215,8 @@
 }
 
 .markdown-content .markdown-image--circuit {
-  max-width: 620px;
-  max-height: 420px;
+  width: min(100%, 480px);
+  max-height: 320px;
 }
 
 .markdown-content ul,
