@@ -220,8 +220,10 @@
 }
 
 .markdown-content .markdown-image--attack-demo {
-  width: min(100%, 560px);
-  max-height: 700px;
+  width: min(100%, 460px);
+  max-height: none;
+  object-fit: initial;
+  background: transparent;
 }
 
 .markdown-content ul,
