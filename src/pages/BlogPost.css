@@ -201,14 +201,22 @@
   margin-bottom: 1.5rem;
 }
 
-.markdown-content img {
+.markdown-content .markdown-image {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
+  max-height: 560px;
+  object-fit: contain;
   margin: 1rem auto 1.5rem;
   border-radius: 10px;
   border: 1px solid #222;
+  background: #0b0b0b;
+}
+
+.markdown-content .markdown-image--circuit {
+  max-width: 620px;
+  max-height: 420px;
 }
 
 .markdown-content ul,

@@ -45,6 +45,14 @@ function resolveAssetSrc(src = '') {
   return src;
 }
 
+function getImageClassName(alt = '') {
+  const normalizedAlt = alt.toLowerCase();
+  if (normalizedAlt.includes('garuda circuit')) {
+    return 'markdown-image markdown-image--circuit';
+  }
+  return 'markdown-image';
+}
+
 function BlogPost() {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === id);
@@ -173,7 +181,13 @@ function BlogPost() {
               components={{
                 h2: ({ children }) => <HeadingRenderer level={2}>{children}</HeadingRenderer>,
                 h3: ({ children }) => <HeadingRenderer level={3}>{children}</HeadingRenderer>,
-                img: ({ src, alt }) => <img src={resolveAssetSrc(src)} alt={alt || ''} />,
+                img: ({ src, alt }) => (
+                  <img
+                    src={resolveAssetSrc(src)}
+                    alt={alt || ''}
+                    className={getImageClassName(alt)}
+                  />
+                ),
               }}
             >
               {blog.content}
