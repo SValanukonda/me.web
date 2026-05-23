@@ -1,4 +1,3 @@
-import { Download } from 'lucide-react';
 import './Resume.css';
 
 function Resume() {
@@ -6,9 +5,6 @@ function Resume() {
     <div className="resume-page">
       <div className="resume-header">
         <h1>Professional Summary</h1>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline download-btn">
-          <Download size={18} /> Download PDF
-        </a>
       </div>
 
       <section className="resume-section">
