@@ -40,6 +40,8 @@ For a deep dive into the implementation, visit the **Garuda Project** on GitHub:
 
 ![Network list flooded with duplicate SSIDs during the attack](/BeaconAttack.jpeg)
 
-*Watch the demonstration video on YouTube or view the project README for the network list flooded with duplicate SSIDs during the attack.*
+Watch the full demo on YouTube: [Garuda Blog Demo](https://www.youtube.com/watch?v=rMhEyAcG2WA)
+
+*You can also view additional implementation details in the project README.*
 
 As seen in the demonstration, once the attack starts, the victim's device sees multiple networks with the same name, rendering the Wi-Fi menu useless and successfully executing a Denial of Service.
