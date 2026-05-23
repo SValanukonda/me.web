@@ -219,6 +219,11 @@
   max-height: 320px;
 }
 
+.markdown-content .markdown-image--attack-demo {
+  width: min(100%, 560px);
+  max-height: 700px;
+}
+
 .markdown-content ul,
 .markdown-content ol {
   margin-bottom: 1.5rem;

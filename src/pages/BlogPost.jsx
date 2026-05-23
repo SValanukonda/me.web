@@ -50,6 +50,9 @@ function getImageClassName(alt = '') {
   if (normalizedAlt.includes('garuda circuit')) {
     return 'markdown-image markdown-image--circuit';
   }
+  if (normalizedAlt.includes('duplicate ssids')) {
+    return 'markdown-image markdown-image--attack-demo';
+  }
   return 'markdown-image';
 }
 
