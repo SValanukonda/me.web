@@ -34,13 +34,13 @@ Because the "fake" SSIDs usually rely on visual trickery (like extra spaces), th
 
 ## Project Demo
 
+**Demo Video Link:** **[Garuda Blog Demo (YouTube)](https://www.youtube.com/watch?v=rMhEyAcG2WA)**
+
 For a deep dive into the implementation, visit the **Garuda Project** on GitHub: [GARUDA by SValanukonda](https://github.com/SValanukonda/GARUDA).
 
 ### Attack Demonstration
 
 ![Network list flooded with duplicate SSIDs during the attack](/BeaconAttack.jpeg)
-
-**Demo Video Link:** **[Garuda Blog Demo (YouTube)](https://www.youtube.com/watch?v=rMhEyAcG2WA)**
 
 *You can also view additional implementation details in the project README.*
 
