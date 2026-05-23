@@ -35,6 +35,16 @@ function HeadingRenderer({ level, children }) {
   return <Tag id={id}>{children}</Tag>;
 }
 
+function resolveAssetSrc(src = '') {
+  if (!src) return src;
+  if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) return src;
+  if (src.startsWith('/')) {
+    const base = import.meta.env.BASE_URL || '/';
+    return `${base.replace(/\/$/, '')}${src}`;
+  }
+  return src;
+}
+
 function BlogPost() {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === id);
@@ -163,6 +173,7 @@ function BlogPost() {
               components={{
                 h2: ({ children }) => <HeadingRenderer level={2}>{children}</HeadingRenderer>,
                 h3: ({ children }) => <HeadingRenderer level={3}>{children}</HeadingRenderer>,
+                img: ({ src, alt }) => <img src={resolveAssetSrc(src)} alt={alt || ''} />,
               }}
             >
               {blog.content}
