@@ -1,5 +1,5 @@
 ---
-title: "Project Garuda: WiFi Beacon Attack and SSID Confusion"
+title: "WiFi Beacon Attack: Understanding the SSID Confusion - THE GARUDA PROJECT"
 date: 2026-01-29
 tags: [Cyber Security, Networking, WiFi]
 description: A Beacon Attack exploits the fundamental way wireless networks announce themselves. Learn how devices discover networks and the security flaws involved.
@@ -37,6 +37,10 @@ Because the "fake" SSIDs usually rely on visual trickery (like extra spaces), th
 **Demo Video Link:** **[Garuda Blog Demo (YouTube)](https://www.youtube.com/watch?v=rMhEyAcG2WA)**
 
 For a deep dive into the implementation, visit the **Garuda Project** on GitHub: [GARUDA by SValanukonda](https://github.com/SValanukonda/GARUDA).
+
+### Garuda Circuit
+
+![Garuda circuit diagram](/Garuda_circuit.jpg)
 
 ### Attack Demonstration
 
