@@ -201,6 +201,16 @@
   margin-bottom: 1.5rem;
 }
 
+.markdown-content img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
 .markdown-content ul,
 .markdown-content ol {
   margin-bottom: 1.5rem;
