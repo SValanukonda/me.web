@@ -18,7 +18,7 @@ const projects = [
     description: 'Engineered a security framework for wireless vulnerability assessment and real-world exploit simulation. Implemented low-level Wi-Fi frame injection for deauthentication attacks.',
     tech: ['C++', 'Python', 'Linux', 'Burp Suite'],
     github: 'https://github.com/SValanukonda/GARUDA',
-    blog: 'https://svalanukonda.github.io/blogsWebsite/posts/wifi_beacon_attack_the_garuda_project/'
+    blog: 'https://svalanukonda.github.io/me.web/#/blog/wifi-beacon-attack'
   },
   {
     title: 'fileStreamer — TCP Streaming Utility',
