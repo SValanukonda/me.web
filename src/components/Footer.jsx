@@ -1,4 +1,3 @@
-import { Mail } from 'lucide-react';
 import './Footer.css';
 
 const GithubIcon = () => (
@@ -18,9 +17,6 @@ function Footer() {
         </a>
         <a href="https://www.linkedin.com/in/sarathbv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <LinkedinIcon />
-        </a>
-        <a href="mailto:sarathbrahmma@gmail.com" aria-label="Email">
-          <Mail size={20} />
         </a>
       </div>
       <p className="copyright">© {new Date().getFullYear()} Sarath Brahmma Valankunda. All rights reserved.</p>
