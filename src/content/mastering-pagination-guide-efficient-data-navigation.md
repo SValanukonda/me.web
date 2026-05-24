@@ -1,7 +1,7 @@
 ---
 title: "Mastering Pagination: A Guide to Efficient Data Navigation"
 date: 2025-02-02
-tags: [Backend, APIs, Databases, System Design, Performance]
+tags: [Performance, System Design]
 description: Learn why pagination matters, compare offset, cursor, and time-based strategies, and choose the right approach for scalable APIs and smooth user experiences.
 ---
 
@@ -127,3 +127,4 @@ No matter which strategy you choose:
 Pagination is a foundational design decision for data-heavy systems. Choosing the right strategy early can prevent expensive refactors later.
 
 If your product is expected to scale, cursor or time-based pagination is often a safer long-term choice than large offset-based navigation.
+

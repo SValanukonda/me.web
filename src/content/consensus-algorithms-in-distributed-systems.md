@@ -1,7 +1,7 @@
 ---
 title: "Consensus Algorithms in Distributed Systems: Why Raft Matters"
 date: 2026-05-23
-tags: [Distributed Systems, System Design, Databases, Raft, Redis, DynamoDB]
+tags: [System Design]
 description: Consensus algorithms help distributed nodes agree on one truth under failures. Learn where they are used, why Raft is popular, and when to rely on battle-tested implementations.
 ---
 
@@ -77,3 +77,4 @@ The right tool depends on your consistency model, failure tolerance, and latency
 Consensus algorithms are not just academic topics. They are the foundation behind reliable distributed writes, leader election, and safe coordination.
 
 If you are building distributed systems, understanding **Raft-level concepts** is high leverage, even if you never implement Raft directly. It helps you make better architectural decisions, choose the right managed primitives, and debug failure modes with confidence.
+

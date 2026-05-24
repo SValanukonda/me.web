@@ -1,7 +1,7 @@
 ---
 title: "WiFi Beacon Attack: Understanding the SSID Confusion - THE GARUDA PROJECT"
 date: 2026-01-29
-tags: [Cyber Security, Networking, WiFi]
+tags: [Cyber Security]
 description: A Beacon Attack exploits the fundamental way wireless networks announce themselves. Learn how devices discover networks and the security flaws involved.
 ---
 
@@ -49,3 +49,4 @@ For a deep dive into the implementation, visit the **Garuda Project** on GitHub:
 *You can also view additional implementation details in the project README.*
 
 As seen in the demonstration, once the attack starts, the victim's device sees multiple networks with the same name, rendering the Wi-Fi menu useless and successfully executing a Denial of Service.
+

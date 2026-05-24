@@ -1,7 +1,7 @@
 ---
 title: "Every Developer Should Know About the Saga Pattern"
 date: 2026-05-17
-tags: [Microservices, System Design, Distributed Systems]
+tags: [System Design]
 description: Understanding the Saga Pattern for managing distributed transactions across microservices — a simpler alternative to 2PC and 3PC.
 ---
 
@@ -30,3 +30,4 @@ Coordination occurs through **events**, allowing services to interact seamlessly
 ## Why It Matters
 
 Understanding the Saga Pattern is crucial for building **reliable, consistent, and scalable** distributed systems. Whether you're designing payment flows, order processing pipelines, or any multi-service workflow — the Saga Pattern gives you a proven strategy to handle failures gracefully.
+

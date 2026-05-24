@@ -1,7 +1,7 @@
 ---
 title: "Locking and Managing Concurrent Access"
 date: 2026-05-23
-tags: [Distributed Systems, Concurrency, Databases, Performance Engineering]
+tags: [Performance, System Design]
 description: Learn why concurrent transactions create race conditions, and how pessimistic and optimistic locking help preserve consistency in multi-threaded systems.
 ---
 
@@ -115,3 +115,4 @@ There is no universal winner. The decision depends on contention level, latency 
 Managing concurrent access is a core part of building reliable software, especially in banking, inventory, booking, and distributed systems.
 
 If multiple workers can touch the same data, you need a concurrency control strategy. Understanding when to use pessimistic locking versus optimistic locking helps you balance **consistency**, **performance**, and **scalability** in a defensible way.
+
