@@ -42,14 +42,20 @@ function loadBlogs() {
       id: filename,
       title: meta.title || filename,
       date: meta.date || '2000-01-01',
+      featured: meta.featured === 'true',
       tags: Array.isArray(meta.tags) ? meta.tags : [],
       description: meta.description || '',
       content,
     });
   }
 
-  // Sort newest first
-  blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Keep featured posts on top, then sort the rest by newest first.
+  blogs.sort((a, b) => {
+    if (a.featured !== b.featured) {
+      return a.featured ? -1 : 1;
+    }
+    return new Date(b.date) - new Date(a.date);
+  });
   return blogs;
 }
 

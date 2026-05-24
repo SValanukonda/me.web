@@ -12,7 +12,7 @@ function Blogs() {
 
   // Sort by date (newest first), filter by selected tag
   const filteredBlogs = useMemo(() => {
-    let result = [...blogs].sort((a, b) => new Date(b.date) - new Date(a.date));
+    let result = [...blogs];
     if (selectedTag) {
       result = result.filter(blog => blog.tags.includes(selectedTag));
     }
