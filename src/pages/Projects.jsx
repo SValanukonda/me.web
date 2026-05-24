@@ -7,6 +7,12 @@ const GithubIcon = () => (
 
 const projects = [
   {
+    title: 'Juliet - End-to-End Performance Companion',
+    date: 'In Progress',
+    description: 'Currently building an end-to-end companion for performance engineering activities. Juliet is designed to assist with analysis, workflow orchestration, and agent-driven execution across the performance lifecycle.',
+    tech: ['LangChain', 'MCP', 'Agentic AI', 'Performance Engineering']
+  },
+  {
     title: 'GARUDA — Security Exploit Framework',
     date: '2026',
     description: 'Engineered a security framework for wireless vulnerability assessment and real-world exploit simulation. Implemented low-level Wi-Fi frame injection for deauthentication attacks.',
