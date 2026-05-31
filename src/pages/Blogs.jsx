@@ -60,7 +60,7 @@ function Blogs() {
                   <div className="blog-card-content">
                     <div className="blog-meta">
                       <span className="meta-item"><Calendar size={14} /> {new Date(blog.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                      <span className="meta-item"><Clock size={14} /> 5 min read</span>
+                      <span className="meta-item"><Clock size={14} /> {Math.ceil(blog.content.split(/\s+/).length / 200)} min read</span>
                     </div>
                     
                     <h3 className="blog-title">{blog.title}</h3>
