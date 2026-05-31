@@ -19,7 +19,7 @@ function Resume() {
           <ul className="resume-bullets">
             <li><strong>Tuned Java applications</strong> (Spring Boot, JBoss) — analyzed thread dumps, heap dumps, GC logs, and Oracle reports to reduce P99 latency and improve throughput for 300M+ subscribers.</li>
             <li><strong>Optimized critical production SQL</strong> — rewrote queries reducing execution time from 40 minutes to 1 second.</li>
-            <li><strong>Scaled Spring Batch processing 3×</strong> by implementing MapReduce-based parallel execution.</li>
+            <li><strong>Scaled Spring Batch processing 3×</strong> by implementing partitioned parallel execution.</li>
             <li>Designed & executed performance test suites using JMeter, K6, Bash, and Python.</li>
             <li>Discovered critical security vulnerabilities during performance testing (CSRF flaws, unencrypted passwords).</li>
             <li>Implemented SRE practices: defined SLO/SLI/SLA metrics, conducted incident postmortems, orchestrated canary & blue-green deployments.</li>
