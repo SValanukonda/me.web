@@ -43,6 +43,78 @@
   }
 }
 
+/* ===== Mobile TOC (visible only on small screens) ===== */
+.mobile-toc-wrapper {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobile-toc-wrapper {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-toc-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .mobile-toc-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .mobile-toc-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    animation: mobileTocSlide 0.25s ease-out;
+  }
+
+  .mobile-toc-link {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.4;
+  }
+
+  .mobile-toc-link:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+  }
+
+  .mobile-toc-link.mobile-toc-sub {
+    padding-left: 2rem;
+    font-size: 0.8rem;
+  }
+
+  @keyframes mobileTocSlide {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
 /* ===== Table of Contents Sidebar (Left) ===== */
 .toc-sidebar {
   position: sticky;

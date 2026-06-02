@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, List, X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { blogs } from '../data/blogsData';
 import './BlogPost.css';
@@ -60,6 +60,7 @@ function BlogPost() {
   const { id } = useParams();
   const blog = blogs.find(b => b.id === id);
   const [activeId, setActiveId] = useState('');
+  const [mobileTocOpen, setMobileTocOpen] = useState(false);
   const contentRef = useRef(null);
 
   const headings = blog ? extractHeadings(blog.content) : [];
@@ -135,7 +136,40 @@ function BlogPost() {
       </div>
 
       <div className="blog-post-layout">
-        {/* Left Sidebar: Table of Contents */}
+        {/* Mobile TOC Toggle */}
+        {headings.length > 0 && (
+          <div className="mobile-toc-wrapper">
+            <button
+              className="mobile-toc-toggle"
+              onClick={() => setMobileTocOpen(!mobileTocOpen)}
+              aria-expanded={mobileTocOpen}
+              aria-label="Toggle table of contents"
+            >
+              {mobileTocOpen ? <X size={18} /> : <List size={18} />}
+              <span>Table of Contents</span>
+            </button>
+            {mobileTocOpen && (
+              <nav className="mobile-toc-nav">
+                {headings.map(({ id, text, level }) => (
+                  <a
+                    key={id}
+                    href={`#${id}`}
+                    className={`mobile-toc-link ${level === 3 ? 'mobile-toc-sub' : ''}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMobileTocOpen(false);
+                      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    {text}
+                  </a>
+                ))}
+              </nav>
+            )}
+          </div>
+        )}
+
+        {/* Left Sidebar: Table of Contents (Desktop) */}
         <aside className="toc-sidebar">
           <div className="toc-container">
             <h4 className="toc-title">TABLE OF CONTENTS</h4>
